@@ -1,0 +1,52 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590842585846' stop='1590842645922'>
+    <name>Facebook</name>
+    <title>Facebook</title>
+    <test-cases>
+        <test-case start='1590842585847' status='broken' stop='1590842645920'>
+            <name>Select by dropdown</name>
+            <title>Select by dropdown</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.61'/>
+            </parameters>
+            <steps>
+                <step start='1590842585923' status='passed' stop='1590842608809'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='c18f7e94-6ee0-4de1-9bc9-4afa464640ef-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590842612811' status='passed' stop='1590842622855'>
+                    <name>POST /session/:sessionId/window/current/maximize</name>
+                    <title>POST /session/:sessionId/window/current/maximize</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1590842622858' status='broken' stop='1590842645920'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='86f646ff-89a0-4064-a856-e6db837ed91e-attachment.json' type='application/json' size='48'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\Asus\Documents\WebdriverIO_Practice\test\dropDownTest.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\Asus\Documents\WebdriverIO_Practice\test\dropDownTest.js)
+                    at Test.Runnable._timeoutError (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\mocha\lib\runnable.js:442:10)
+                    at Timeout.&lt;anonymous> (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\mocha\lib\runnable.js:252:24)
+                    at listOnTimeout (internal/timers.js:549:17)
+                    at processTimers (internal/timers.js:492:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

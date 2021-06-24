@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590333147430' stop='1590333191057'>
+    <name>fresh works</name>
+    <title>fresh works</title>
+    <test-cases>
+        <test-case start='1590333147432' status='broken' stop='1590333191055'>
+            <name>Get header value</name>
+            <title>Get header value</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-81.0.4044.138'/>
+            </parameters>
+            <steps>
+                <step start='1590333148779' status='passed' stop='1590333189214'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='3659edb6-e472-4124-bd9f-a049d53743ed-attachment.json' type='application/json' size='42'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590333189218' status='passed' stop='1590333190359'>
+                    <name>POST /session/:sessionId/window/current/maximize</name>
+                    <title>POST /session/:sessionId/window/current/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='8f04fa6d-bdbb-4104-bdd2-dc600dc37cb6-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590333190363' status='passed' stop='1590333190488'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='09c888b0-1efc-44e9-bc65-e34074a5a9f6-attachment.json' type='application/json' size='46'/>
+                        <attachment title='Response' source='30b4a91c-b0d3-496f-bd47-713c847ec8ab-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590333190551' status='passed' stop='1590333191051'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='ec62b93e-395e-41d6-92ef-c69434205ac5-attachment.png' type='image/png' size='125799'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>browser.getText is not a function</message>
+                <stack-trace>TypeError: browser.getText is not a function
+                    at Context.&lt;anonymous> (C:\Users\Asus\Documents\WebdriverIO_Practice\test\header.js:7:28)
+                    at Context.executeSync (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

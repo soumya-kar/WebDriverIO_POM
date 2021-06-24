@@ -1,0 +1,115 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1591039019007' stop='1591039023728'>
+    <name>Handle alert pop up</name>
+    <title>Handle alert pop up</title>
+    <test-cases>
+        <test-case start='1591039019007' status='passed' stop='1591039023596'>
+            <name>Get alert text</name>
+            <title>Get alert text</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.61'/>
+            </parameters>
+            <steps>
+                <step start='1591039019089' status='passed' stop='1591039022797'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a3a38b28-79e6-43fb-8800-90f16f6e4fe8-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591039022801' status='passed' stop='1591039022877'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='7c37bfcb-b1b8-4238-8387-1a69c09ff221-attachment.json' type='application/json' size='71'/>
+                        <attachment title='Response' source='5361f843-85cb-4df9-9ceb-36279f30c7c1-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591039022896' status='passed' stop='1591039023437'>
+                    <name>POST /session/:sessionId/element/0.4521455981743392-1/click</name>
+                    <title>POST /session/:sessionId/element/0.4521455981743392-1/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1591039023437' status='passed' stop='1591039023490'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='1f57b07b-b0d4-4c87-9001-4db5928c844c-attachment.json' type='application/json' size='74'/>
+                        <attachment title='Response' source='22ff9074-ed59-4778-8922-cb9c814e8d73-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1591039023497' status='passed' stop='1591039023576'>
+                    <name>POST /session/:sessionId/element/0.1997846311300555-1/click</name>
+                    <title>POST /session/:sessionId/element/0.1997846311300555-1/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1591039023576' status='passed' stop='1591039023592'>
+                    <name>GET /session/:sessionId/alert_text</name>
+                    <title>GET /session/:sessionId/alert_text</title>
+                    <attachments>
+                        <attachment title='Response' source='decfb7fc-5410-4d35-af8f-393f5d9b3aaf-attachment.json' type='application/json' size='17'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1591039023597' status='broken' stop='1591039023726'>
+            <name>Accept the alert</name>
+            <title>Accept the alert</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.61'/>
+            </parameters>
+            <steps>
+                <step start='1591039023599' status='broken' stop='1591039023726'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='103a1f18-4e9a-441b-bc35-e38a50c57144-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps>
+                        <step start='1591039023678' status='broken' stop='1591039023726'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>unexpected alert open: {Alert text : I am a JS Alert}
+                  (Session info: chrome=83.0.4103.61)
+                  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.17134 x86_64)</message>
+                <stack-trace>Error: unexpected alert open: {Alert text : I am a JS Alert}
+                  (Session info: chrome=83.0.4103.61)
+                  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.17134 x86_64)
+                    at getErrorFromResponseBody (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\webdriver\build\utils.js:121:10)
+                    at WebDriverRequest._request (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\webdriver\build\request.js:148:56)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at async Browser.runCommandWithHooks (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Browser.runCommandWithHooks (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Browser.wrapCommandFn (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Context.&lt;anonymous> (C:\Users\Asus\Documents\WebdriverIO_Practice\test\popupAlert.js:16:13)
+                    at Context.executeSync (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590519479573' stop='1590519496313'>
+    <name>fresh works</name>
+    <title>fresh works</title>
+    <test-cases>
+        <test-case start='1590519479574' status='broken' stop='1590519496310'>
+            <name>Verify scroll works as expected</name>
+            <title>Verify scroll works as expected</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-81.0.4044.138'/>
+            </parameters>
+            <steps>
+                <step start='1590519479662' status='passed' stop='1590519488909'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='38b3784e-2b4a-48de-a635-55a42c5e3841-attachment.json' type='application/json' size='38'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590519493913' status='passed' stop='1590519495164'>
+                    <name>POST /session/:sessionId/window/current/maximize</name>
+                    <title>POST /session/:sessionId/window/current/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='85fb07fd-d84d-419c-9419-9de20a464bc2-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590519495167' status='passed' stop='1590519495237'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='6c2cad9b-4e63-40ea-abb7-825f17b861a3-attachment.json' type='application/json' size='67'/>
+                        <attachment title='Response' source='9f58bc5f-3c1f-495a-b291-e13e4c43a307-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590519495270' status='passed' stop='1590519496307'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='61a0230f-d728-49d8-b6c9-f7b2d9d72d6c-attachment.png' type='image/png' size='568956'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>crmPage.forgotPassword.isDisplayedInViewPort is not a function</message>
+                <stack-trace>TypeError: crmPage.forgotPassword.isDisplayedInViewPort is not a function
+                    at Context.&lt;anonymous> (C:\Users\Asus\Documents\WebdriverIO_Practice\test\header.js:17:60)
+                    at Context.executeSync (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

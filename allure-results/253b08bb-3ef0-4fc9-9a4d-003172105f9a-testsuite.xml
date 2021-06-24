@@ -1,0 +1,106 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590520680349' stop='1590520740444'>
+    <name>Facebook</name>
+    <title>Facebook</title>
+    <test-cases>
+        <test-case start='1590520680349' status='broken' stop='1590520740443'>
+            <name>Select by dropdown</name>
+            <title>Select by dropdown</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-81.0.4044.138'/>
+            </parameters>
+            <steps>
+                <step start='1590520680432' status='passed' stop='1590520700636'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='b398efd2-fe1f-4d72-b708-80ea9ff07cec-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590520700637' status='passed' stop='1590520701781'>
+                    <name>POST /session/:sessionId/window/current/maximize</name>
+                    <title>POST /session/:sessionId/window/current/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='389d3017-e4a9-4888-b69e-0b7d520e7dec-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590520701785' status='passed' stop='1590520701844'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='29f5cdd2-30b8-45f0-9aac-6f3f23a10b52-attachment.json' type='application/json' size='48'/>
+                        <attachment title='Response' source='68d65e90-5e98-42e8-83d4-760bfb2e4283-attachment.json' type='application/json' size='277'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590520701869' status='passed' stop='1590520701933'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='d384633a-17a1-4e06-bbc8-c9a3f33ff89e-attachment.json' type='application/json' size='48'/>
+                        <attachment title='Response' source='dd16c6ea-b9fe-4fab-b4f9-93a6af8dfbbe-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590520702369' status='passed' stop='1590520702407'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='bd6161e7-cdc1-4d0b-a2fe-fca918866db0-attachment.json' type='application/json' size='48'/>
+                        <attachment title='Response' source='a23f27b5-f52c-4770-af65-f84c86d2da95-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590520702868' status='passed' stop='1590520702901'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='c2cce974-58e0-476e-8f3a-ff9a111f06a5-attachment.json' type='application/json' size='48'/>
+                        <attachment title='Response' source='8ad48057-3011-4e9b-9de3-ad22531bf228-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590520703368' status='passed' stop='1590520703395'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='275b012d-17ed-41ac-a704-cf58a7c7e139-attachment.json' type='application/json' size='48'/>
+                        <attachment title='Response' source='54b916ca-c7c6-4e33-8600-06b736930511-attachment.json' type='application/json' size='2'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590520703870' status='broken' stop='1590520740442'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='384ddd98-6fc2-4869-95aa-d8b16bd44a7a-attachment.json' type='application/json' size='48'/>
+                    </attachments>
+                    <steps>
+                        <step start='1590520711875' status='broken' stop='1590520740442'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\Asus\Documents\WebdriverIO_Practice\test\dropDownTest.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\Asus\Documents\WebdriverIO_Practice\test\dropDownTest.js)
+                    at Test.Runnable._timeoutError (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\mocha\lib\runnable.js:442:10)
+                    at Timeout.&lt;anonymous> (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\mocha\lib\runnable.js:252:24)
+                    at listOnTimeout (internal/timers.js:549:17)
+                    at processTimers (internal/timers.js:492:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

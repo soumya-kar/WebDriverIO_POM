@@ -1,0 +1,100 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590417902696' stop='1590417909311'>
+    <name>Automate Internet app</name>
+    <title>Automate Internet app</title>
+    <test-cases>
+        <test-case start='1590417902697' status='failed' stop='1590417909308'>
+            <name>Verify user is able to click the checkbox</name>
+            <title>Verify user is able to click the checkbox</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-81.0.4044.138'/>
+            </parameters>
+            <steps>
+                <step start='1590417902777' status='passed' stop='1590417906495'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='ec827361-8350-4e84-8fe5-2815f3c71fe4-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590417906496' status='passed' stop='1590417907637'>
+                    <name>POST /session/:sessionId/window/current/maximize</name>
+                    <title>POST /session/:sessionId/window/current/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='e3d3c5f4-4d6e-4ace-8929-25a70bdc0e00-attachment.json' type='application/json' size='58'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590417907639' status='passed' stop='1590417907692'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='76ccd70d-7bdf-4f5d-9907-77e119f85b9f-attachment.json' type='application/json' size='64'/>
+                        <attachment title='Response' source='88db2ff7-e9ed-4915-88ba-99e275a8a7a2-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590417907720' status='passed' stop='1590417908629'>
+                    <name>POST /session/:sessionId/element/0.4704084469298917-1/click</name>
+                    <title>POST /session/:sessionId/element/0.4704084469298917-1/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1590417908632' status='passed' stop='1590417908682'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='5ee565c3-1e06-4b87-a448-eedc3a2147f5-attachment.json' type='application/json' size='78'/>
+                        <attachment title='Response' source='8aa1477d-fb03-4da1-a44f-75b1e1af1744-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590417908689' status='passed' stop='1590417908812'>
+                    <name>POST /session/:sessionId/element/0.20998035805726611-1/click</name>
+                    <title>POST /session/:sessionId/element/0.20998035805726611-1/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1590417908813' status='passed' stop='1590417908858'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='6c6777c9-d711-42b7-b092-9dab7f62aed8-attachment.json' type='application/json' size='78'/>
+                        <attachment title='Response' source='3accf46c-2f35-40ef-b4bb-6258bc02bb37-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590417908863' status='passed' stop='1590417908902'>
+                    <name>GET /session/:sessionId/element/0.20998035805726611-1/selected</name>
+                    <title>GET /session/:sessionId/element/0.20998035805726611-1/selected</title>
+                    <attachments>
+                        <attachment title='Response' source='da7ce63f-09a4-4c38-b61e-502f49bd17d1-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590417908909' status='passed' stop='1590417909305'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='0a4e37c5-8b44-4e5b-8734-bdcf535922d3-attachment.png' type='image/png' size='23439'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expected true to equal false</message>
+                <stack-trace>AssertionError: expected true to equal false
+                    at Context.&lt;anonymous> (C:\Users\Asus\Documents\WebdriverIO_Practice\test\internetHeroku.js:9:63)
+                    at Context.executeSync (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

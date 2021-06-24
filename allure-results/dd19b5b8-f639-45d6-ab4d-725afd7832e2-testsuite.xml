@@ -1,0 +1,125 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590843343265' stop='1590843357460'>
+    <name>Facebook</name>
+    <title>Facebook</title>
+    <test-cases>
+        <test-case start='1590843343266' status='passed' stop='1590843354688'>
+            <name>Select by dropdown</name>
+            <title>Select by dropdown</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.61'/>
+            </parameters>
+            <steps>
+                <step start='1590843343343' status='passed' stop='1590843349235'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='c9c1c17d-2a20-4a02-8f26-7fab5adf4047-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590843349239' status='passed' stop='1590843349313'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='39587913-0c12-493f-a36a-517db86f50ea-attachment.json' type='application/json' size='48'/>
+                        <attachment title='Response' source='f5f413ba-f232-470e-bae7-ef6882494106-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590843349341' status='passed' stop='1590843349405'>
+                    <name>POST /session/:sessionId/element/0.03871926461388964-1/element</name>
+                    <title>POST /session/:sessionId/element/0.03871926461388964-1/element</title>
+                    <attachments>
+                        <attachment title='Request' source='7497641a-c7e6-4cbf-8e45-cfe60f059f42-attachment.json' type='application/json' size='182'/>
+                        <attachment title='Response' source='80defc8f-600f-41ad-b561-a6411b07aeb1-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590843349406' status='passed' stop='1590843349684'>
+                    <name>POST /session/:sessionId/element/0.03871926461388964-2/click</name>
+                    <title>POST /session/:sessionId/element/0.03871926461388964-2/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1590843354690' status='failed' stop='1590843357457'>
+            <name>Select by dropdown</name>
+            <title>Select by dropdown</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-83.0.4103.61'/>
+            </parameters>
+            <steps>
+                <step start='1590843354692' status='passed' stop='1590843356293'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='1bd4c858-9a45-408c-8c70-821a41958ddf-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590843356295' status='passed' stop='1590843356725'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='492a7017-6f1d-4cb5-bb54-29da28a3bdc4-attachment.json' type='application/json' size='50'/>
+                        <attachment title='Response' source='8c76d287-d4bf-46d2-aec8-13e8341e10c0-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590843356735' status='passed' stop='1590843356790'>
+                    <name>POST /session/:sessionId/element/0.22227125027637018-1/element</name>
+                    <title>POST /session/:sessionId/element/0.22227125027637018-1/element</title>
+                    <attachments>
+                        <attachment title='Request' source='44fabdd4-0599-4e2d-9990-0f3e63841dc0-attachment.json' type='application/json' size='194'/>
+                        <attachment title='Response' source='62b768b1-418e-414c-b829-319728bb2343-attachment.json' type='application/json' size='422'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1590843356795' status='passed' stop='1590843357454'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='0000ef2a-1587-4cce-82f7-bfce7b582799-attachment.png' type='image/png' size='102318'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Malformed type for "elementId" parameter of command elementClick
+                Expected: string
+                Actual: null
+                
+                For more info see https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidclick
+                </message>
+                <stack-trace>Error: Malformed type for "elementId" parameter of command elementClick
+                Expected: string
+                Actual: null
+                For more info see https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidclick
+                    at Element.protocolCommand (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\webdriver\build\command.js:51:15)
+                    at Element.wrapCommandFn (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\wrapCommand.js:54:17)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\webdriverio\build\middlewares.js:21:57)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at Element.runCommandWithHooks (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Element.wrapCommandFn (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Element.elementErrorHandlerCallback (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at Context.&lt;anonymous> (C:\Users\Asus\Documents\WebdriverIO_Practice\test\dropDownTest.js:13:21)
+                    at Context.executeSync (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

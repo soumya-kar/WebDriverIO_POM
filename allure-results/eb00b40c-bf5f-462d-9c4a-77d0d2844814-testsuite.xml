@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1590417776656' stop='1590417778210'>
+    <name>Automate Internet app</name>
+    <title>Automate Internet app</title>
+    <test-cases>
+        <test-case start='1590417776657' status='broken' stop='1590417778207'>
+            <name>Verify user is able to click the checkbox</name>
+            <title>Verify user is able to click the checkbox</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='Chrome-10.0.17134'/>
+            </parameters>
+            <steps>
+                <step start='1590417776749' status='broken' stop='1590417778206'>
+                    <name>undefined undefined</name>
+                    <title>undefined undefined</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1590417777853' status='passed' stop='1590417778201'>
+                            <name>undefined undefined</name>
+                            <title>undefined undefined</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>net::ERR_NAME_NOT_RESOLVED at http://the-internet.herokuapp.com/</message>
+                <stack-trace>net::ERR_NAME_NOT_RESOLVED at http://the-internet.herokuapp.com/
+                    at Frame.&lt;anonymous> (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\puppeteer-core\lib\helper.js:94:19)
+                    at Page.goto (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\puppeteer-core\lib\Page.js:476:53)
+                    at Page.&lt;anonymous> (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\puppeteer-core\lib\helper.js:95:27)
+                    at DevToolsDriver.navigateTo (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\devtools\build\commands\navigateTo.js:13:14)
+                    at Browser.wrappedCommand (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\devtools\build\devtoolsdriver.js:92:47)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at async Browser.runCommandWithHooks (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Browser.runCommandWithHooks (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Browser.wrapCommandFn (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Context.&lt;anonymous> (C:\Users\Asus\Documents\WebdriverIO_Practice\test\internetHeroku.js:5:15)
+                    at Context.executeSync (C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Asus\Documents\WebdriverIO_Practice\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
